@@ -1,0 +1,76 @@
+<mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+  <mat-tab label="Vue d'ensemble">
+    <h2 class="mat-display-2 font-weight-bold my-4 text-center">Vue d'ensemble</h2>
+    <div class="row my-4">
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <iframe width="720" height="360" src="https://www.youtube.com/embed/VrDkFC3yZvs?start=19" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center">
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-outline-danger btn-block mb-2" (click)="selectTab(1)">Afficher Consignes</button>
+          </div>
+          <div class="col-md-12">
+            <button class="btn btn-outline-danger btn-block mb-2" (click)="selectTab(2)">Afficher Organisation</button>
+          </div>
+          <div class="col-md-12">
+            <button class="btn btn-outline-danger btn-block mb-2" (click)="selectTab(3)">Afficher But</button>
+          </div>
+          <div class="col-md-12">
+            <button class="btn btn-outline-danger btn-block" (click)="selectTab(4)">Afficher Objectif</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Consignes" id="tab-2">
+    <h2 class="mat-display-2 font-weight-bold my-4 text-center">Consignes</h2>
+    <div class="row justify-content-center align-items-center my-5">
+      <div class="row">
+        <div class="col-sm-8 mx-auto">
+          <ul class="list-group list-group-lg text-center">
+            <li class="list-group-item list-group-item-danger my-2">Effectuer une passe avec la technique vue précédemment</li>
+            <li class="list-group-item list-group-item-danger my-2">Une fois la passe effectuée, je retourne dans ma colonne</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Organisation">
+    <h2 class="mat-display-2 font-weight-bold my-4 text-center">Organisation</h2>
+    <div class="row justify-content-center align-items-center my-5">
+      <div class="row">
+        <div class="col-sm-8 mx-auto">
+          <ul class="list-group list-group-lg text-center">
+            <li class="list-group-item list-group-item-danger my-2">2 files, face à face</li>
+            <li class="list-group-item list-group-item-danger my-2">Retourner dans sa file après la passe</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="But">
+    <h2 class="mat-display-2 font-weight-bold my-4 text-center">But</h2>
+    <div class="row justify-content-center align-items-center my-5">
+      <div class="row">
+        <div class="col-sm-8 mx-auto">
+          <ul class="list-group list-group-lg text-center">
+            <li class="list-group-item list-group-item-danger my-2">Réaliser 20 passes à la suite sans que la balle ne tombe</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+  <mat-tab label="Objectif">
+    <h2 class="mat-display-2 font-weight-bold my-4 text-center">Objectif</h2>
+    <div class="row justify-content-center align-items-center my-5">
+      <div class="row">
+        <div class="col-sm-8 mx-auto">
+          <ul class="list-group list-group-lg text-center">
+            <li class="list-group-item list-group-item-danger my-2">Améliorer la technique de passe et prendre conscience de l’importance de celle-ci</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </mat-tab>
+</mat-tab-group>
